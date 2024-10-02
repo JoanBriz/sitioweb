@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>MeDiccionary</title>
+    
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <a href="../index.html"><img src="../Fotos/logo.png" alt="logo diccionary" width="150" height="150"></a>
+        <h1>MeDiccionary</h1>
+        <p>Diccionario médico</p>
+		
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+    
+      <a href="../index.html">Inicio</a> |
+      <a href="../Formularios/contacto.html">Contacto</a> |
+	  <a href="../Formularios/buscador.html">Buscador</a> |
+      <a href="../Formularios/valoranos.html">Valoranos</a>
+            
+        
+    </nav>
+    <!-- Zona de contenido principal -->
+    <main>
+        <h2>Valora tu experiencia en MeDiccionary</h2>
+        <p>todos los campos son obligatorio</p>
+        <form action="../Formularios/submit_valoranos.html" method="get">
+		<div>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+		</div>
+		<div>
+			<label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+		</div>
+		<div>
+			<label for="fecha">Fecha de tu valoración:</label>
+            <input type="date" id="fecha" name="fecha" required>
+		</div>
+		<div>
+		
+			<label for="valoracion">Valoración del sitio (1-10):</label>
+            <input type="number" id="valoracion" name="valoracion" min="1" max="10" step="1" placeholder="Introduce un número entre 1 y 10" required>
+		</div>
+		<div>
+			<label for="satisfaccion">Satisfacción general:</label>
+            <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="100" step="10" required>
+		</div>
+        <div>		
+			 <label for="comentarios">Comentarios adicionales:</label>
+        		<textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+        </div>
+
+            <input type="submit" value="Enviar valoración">
+        </form> 
+    
+       
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>©️ 2024 MeDiccionary. Todos los derechos reservados. Joan Briz Chornet y Jesús Patiño Casas.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>MeDiccionary</title>
+
+    <style>
+        
+        th, td {
+            border: 1px solid #000;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <a href="../index.html"><img src="../Fotos/logo.png" alt="logo diccionary" width="150" height="150"></a>
+        <h1>MeDiccionary</h1>
+        <p>Diccionario médico</p>
+		
+    </header>
+	
+	<!-- Barra de navegación -->
+    <nav>
+    
+        <a href="../index.html">Inicio</a> |
+        <a href="../Formularios/contacto.html">Contacto</a> |
+        <a href="../Formularios/buscador.html">Buscador</a> |
+        <a href="../Formularios/valoranos.html">Valoranos</a>
+              
+          
+      </nav>
+	
+    <!-- Zona de contenido principal -->
+    <main>
+      <h2>Formulario de Contacto</h2>
+      <p>El asterisco (*) hace referencia a un campo obligatorio</p>
+      
+	  <form action="submit_contacto.html" method="post">
+	
+	<!-- label:cada parte del formulario, for=el nombre interno de esa parte, el input es para modificar a nuestro gusto este label, en id se pone lo mismo que en for y en name
+    input una linea y text area varias lineas, si en vez de un texto de varias lineas o un texto de una sola linea queremos poner una lista desplegable crearemos un select, con sus options	-->
+	     
+    <div class="form-group">
+        <label for="asunto">Asunto *:</label>
+        <input type="text" id="asunto" name="asunto" required>
+    </div>
+
+    <div class="form-group">
+        <label for="comentarios">Comentarios y Preguntas *:</label>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="30" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="yo_soy">Yo soy:</label>
+        <select id="yo_soy" name="yo_soy">
+            <option value="paciente">Paciente</option>
+            <option value="cientifico">Científico</option>
+            <option value="medico">Médico</option>
+            <option value="educador">Educador</option>
+            <option value="fabricante">Fabricante</option>
+            <option value="periodista">Periodista</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+    </div>
+
+    <div class="form-group">
+        <label>Sexo:</label>
+        <div>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label>
+        </div>
+        <div>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label>
+        </div>
+        <div>
+            <input type="radio" id="otro" name="sexo" value="otro">
+            <label for="otro">Otro</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="correo_electronico">Correo Electrónico:</label>
+        <input type="email" id="correo_electronico" name="correo_electronico">
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" id="info" name="info">
+        <label for="info">Deseo recibir más información</label>
+    </div>
+
+        
+		<input type="submit">
+      </form>
+    </main>
+    <aside>
+        <h2>Horiarios:</h2>
+        <p>Horarios de disponibilidad de atención al cliente</p>
+        <table>
+            <tr>
+            <th></th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            </tr>
+            
+            <tr>
+            <td>Mañanas</td>
+            <td>9:00-12:00</td>
+            <td>8:00-11:00</td>
+            <td>9:00-12:30</td>
+            <td>8:00-11:00</td>
+            <td>9:00-12:30</td>
+            </tr>
+            <tr>
+            <td>Tardes</td>
+            <td>-------</td>
+            <td>18:00-20:00</td>
+            <td>-------</td>
+            <td>18:00-20:00</td>
+            <td>-------</td>
+            
+            
+            </table>
+    </aside>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>©️ 2024 MeDiccionary. Todos los derechos reservados. Joan Briz Chornet y Jesús Patiño Casas.</p>
+    </footer>
+</body>
+</html>
