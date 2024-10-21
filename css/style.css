@@ -53,7 +53,7 @@ body {
     margin: 0px;
     padding: 0px;
     line-height: 1.6;
-    text-align: center; /* Centra todo el texto del body */
+    text-align: center; 
 
 }
 
@@ -85,13 +85,19 @@ main p {
     color: var(--color-acentuados);
 }
 
+main figure {
+    margin-bottom: 15px;
+}
+
+main nav {
+    font-size: 19.5px;
+}
 
 main ul {
     display:flex;
     list-style: none; /* Eliminar viñetas */
     padding: 0;
-    margin: 0;
-    display: flex; 
+    margin: 0; 
     justify-content: center; 
 }
 main ul li {
@@ -111,7 +117,7 @@ a:hover {
 
 /* Estilo de bordes, márgenes y padding */
 section {
-    margin: 30px 0;
+    margin: 20px;
     padding: 10px;
     background-color: var(--color-fondo2);
     border-radius: 6px;
@@ -150,10 +156,12 @@ table {
     color: var(--color-acentuados); 
     background-color:var(--color-fondo1); 
     border-collapse: collapse; 
-    width: 100%; 
-    margin: 0px;
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto;
     padding:0px;
-
+    margin-bottom: 20px;
+   
 }
 
 table th {
