@@ -101,7 +101,7 @@ main ul {
     justify-content: center; 
 }
 main ul li {
-    margin: 10px; 
+     flex: 1 1 auto;
 }
 
 /* Links */
