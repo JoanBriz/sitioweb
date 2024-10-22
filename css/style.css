@@ -94,6 +94,12 @@ main p {
     margin-bottom: 5px;
     color: var(--color-acentuados);
 }
+main blockquote {
+    font-size: 19.5px;
+    margin-bottom: 5px;
+    color: var(--color-acentuados);
+}
+
 
 main figure {
     margin-bottom: 15px;
