@@ -184,6 +184,13 @@ section a {
 section a:hover {
     text-decoration: underline;
 }
+
+.sectionA {
+    font-size: 19.5px;
+    margin-bottom: 5px;
+    color: var(--color-fondo1);
+}
+
 .accesiblep {
     text-align: left;
     margin-bottom: 20px;
